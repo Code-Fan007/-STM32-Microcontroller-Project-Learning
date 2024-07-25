@@ -2,9 +2,7 @@
 //点灯
 int main(void)
 {
-	RCC->APB2ENR=0x00000010;
-	GPIOC->CRH=0X00300000;
-	GPIOC->ODR=0X00002000;
+	RCC_APB1ENR_BKPEN
 	while(1)
 	{
 		
